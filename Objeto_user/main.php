@@ -1,73 +1,102 @@
-<?php 
+<?php
 
 include "usuario.php";
+include "cliente.php";
+include "funcionario.php";
 
 $Cadastro = new usuario();
 $Cliente = array();
+$funcionario = array();
 $i = 0;
-
 $op = 0;
-while ($op != 7){
+$op1 = 0;
+
+while ($op != 7) {
 
     echo " 1-CADASTRAR\n 2-DEPOSITAR\n 3-SACAR\n 4-ATIVAR OU DESATIVA CONTA\n 5-ATUALIZAR CONTA\n 6-DELETAR CONTA\n 7-SAIR\n";
     $op = readline();
 
-    switch($op){
-        case 1:{
+    switch ($op) {
+        case 1: {
 
-            echo "Bem-vindo ao casdastro do cliente!\n";
-            echo "Informe seu nome completo:";
-            $nome = readline();
-          
-            echo "Informe seu CPF:";
-            $cpf = readline();
-          
-            echo "Informe sua idade:";
-            $idade = readline();
-          
-            echo "Informe seu endereço:";
-            $endereco = readline();
+                while ($op1 != 2) {
 
-            echo "Informe seu saldo inicial:";
-            $saldo = readline();
-             
-        $Cliente[$i] = $Cadastro->Cadastrar($nome,$cpf,$endereco,$idade,$saldo);
-        $i++;
-        var_dump($Cliente);
-               
-        break;
-        }
+                    echo " 1-CADASTRO CLIENTE\n 2-CADASTRO FUNCIONÁRIO\n";
+                    $op1 = readline();
 
-        case 2:{
-          $Cliente[$i] = $Cadastro->Depositar($user);
-        
-            break;
-        }
+                    if ($op1 == 1) {
 
-        case 3:{
+                        echo "Informe seu nome completo:";
+                        $nome = readline();
 
-            $Cliente[$i]->Sacar($user);
+                        echo "Informe seu CPF:";
+                        $cpf = readline();
 
-            break;
-        }
+                        echo "Informe sua idade:";
+                        $idade = readline();
 
-        case 4:{
+                        echo "Informe seu endereço:";
+                        $endereco = readline();
 
-            $Cliente[$i]->ativaConta($user);
+                        echo "Informe seu saldo inicial:";
+                        $saldo = readline();
 
-            break;
-        }
+                        $Cliente[$i] = $Cadastro->cadastrarCliente();
+                        $i++;
+                        var_dump($Cliente);
+
+                        $op1 = 1;
+                    } else {
+
+                        echo "Informe seu nome completo:";
+                        $nome = readline();
+
+                        echo "Informe seu CPF:";
+                        $cpf = readline();
+
+                        echo "Informe sua idade:";
+                        $idade = readline();
+
+                        echo "Informe seu endereço:";
+                        $endereco = readline();
+
+                        echo "Informe seu salário:";
+                        $salalario = readline();
+
+                        $funcionario[$i] = $Cadastro->Cadastrar($nome, $cpf, $endereco, $idade);
+                        $i++;
+                        var_dump($funcionario);
+
+                        $op1 = 2;
+                    }
+                }
+
+
+                break;
+            }
+
+        case 2: {
+
+            echo "Informe o valor que deseja depositar:";
+            $deposito;
+
+            $Cliente[$i] = Depositar($deposito);
+
+                break;
+            }
+
+        case 3: {
+
+                $Cliente[$i]->Sacar($user);
+
+                break;
+            }
+
+        case 4: {
+
+                $Cliente[$i]->ativaConta($user);
+
+                break;
+            }
     }
-
 }
-
-
-
-
-
-
-
-
-
-
-?>
