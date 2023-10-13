@@ -1,0 +1,91 @@
+.fundo {
+    width: 1440px;
+    height: 1024px;
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(180deg, #0C3145 0%, rgba(47, 51, 54, 0.00) 100%);
+}
+
+.caixa-saiba {
+    width: 239px;
+    height: 49px;
+    background: #0C3145;
+    color: #FFF;
+    flex-shrink: 0;
+    left: 161px;
+    top: 876px;
+    position: absolute;
+    font-size: 48px;
+    font-family: Roboto Flex;
+    font-weight: 100;
+    line-height: 45px;
+    word-wrap: break-word;
+}
+
+.titulo {
+    margin: auto;
+    width: 1126px;
+    mix-blend-mode: luminosity;
+    color: #FFF;
+    font-family: Microsoft Sans Serif;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    left: 250px;
+    top: 103px;
+    position: absolute;
+}
+
+.texto-inicio {
+    display: flex;
+    width: 1076px;
+    height: 353px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: justify;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Roboto Flex;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 45px;
+    word-wrap: break-word;
+    font-weight: 100;
+    line-height: 45px;/* 93.75% */
+    left: 138px;
+    top: 337px;
+    position: absolute;
+}
+
+.logo-bmw {
+    left: 33px;
+    top: 70px;
+    position: absolute;
+    width: 178px;
+    height: 184px;
+    flex-shrink: 0;
+}
+
+.icone-carro {
+    left: 781px;
+    top: 638px;
+    position: absolute;
+    width: 659px;
+    height: 379px;
+    flex-shrink: 0;
+
+}
+
+.rectangle-1 {
+    width: 311px;
+    height: 94px;
+    flex-shrink: 0;
+    left: 125px;
+    top: 854px;
+    position: absolute;
+    background: #0C3145;
+}
