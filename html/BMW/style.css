@@ -1,4 +1,6 @@
-.fundo {
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200&display=swap');
+
+body {
     width: 1440px;
     height: 1024px;
     overflow: hidden;
@@ -7,19 +9,20 @@
 }
 
 .caixa-saiba {
-    width: 239px;
-    height: 49px;
+    width: 269px;
+    height: 65px;
     background: #0C3145;
     color: #FFF;
     flex-shrink: 0;
     left: 161px;
-    top: 876px;
+    top: 866px;
     position: absolute;
     font-size: 48px;
-    font-family: Roboto Flex;
+    font-family: 'Roboto Flex', sans-serif;
     font-weight: 100;
-    line-height: 45px;
+    line-height: 60px;
     word-wrap: break-word;
+    text-align: center;
 }
 
 .titulo {
@@ -33,7 +36,7 @@
     font-weight: 400;
     line-height: normal;
     text-align: center;
-    left: 250px;
+    left: 400px;
     top: 103px;
     position: absolute;
 }
@@ -48,21 +51,22 @@
     color: #FFF;
     text-align: justify;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-family: Roboto Flex;
+    font-family: 'Roboto Flex', sans-serif;
     font-size: 48px;
     font-style: normal;
     font-weight: 100;
     line-height: 45px;
     word-wrap: break-word;
     font-weight: 100;
-    line-height: 45px;/* 93.75% */
-    left: 138px;
+    line-height: 45px;
+    /* 93.75% */
+    left: 250px;
     top: 337px;
     position: absolute;
 }
 
 .logo-bmw {
-    left: 33px;
+    left: 60px;
     top: 70px;
     position: absolute;
     width: 178px;
@@ -71,7 +75,7 @@
 }
 
 .icone-carro {
-    left: 781px;
+    left: 1250px;
     top: 638px;
     position: absolute;
     width: 659px;
