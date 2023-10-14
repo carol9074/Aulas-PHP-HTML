@@ -9,9 +9,9 @@ body {
 }
 
 .caixa-saiba {
+
     width: 269px;
     height: 65px;
-    background: #0C3145;
     color: #FFF;
     flex-shrink: 0;
     left: 161px;
@@ -59,7 +59,6 @@ body {
     word-wrap: break-word;
     font-weight: 100;
     line-height: 45px;
-    /* 93.75% */
     left: 250px;
     top: 337px;
     position: absolute;
@@ -84,12 +83,17 @@ body {
 
 }
 
-.rectangle-1 {
-    width: 311px;
-    height: 94px;
-    flex-shrink: 0;
-    left: 125px;
-    top: 854px;
-    position: absolute;
-    background: #0C3145;
+button {
+    background-color: #0C3145;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+}
+
+button:hover {
+    background-color: #46687a;
 }
