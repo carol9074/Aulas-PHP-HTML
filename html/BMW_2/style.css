@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200&display=swap');
+
+body {
+    width: 1440px;
+    height: 1024px;
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(180deg, #0C3145 0%, rgba(47, 51, 54, 0.00) 100%);
+}
+
+.caixa-saiba {
+
+    width: 269px;
+    height: 65px;
+    color: #FFF;
+    flex-shrink: 0;
+    left: 161px;
+    top: 866px;
+    position: absolute;
+    font-size: 48px;
+    font-family: 'Roboto Flex', sans-serif;
+    font-weight: 100;
+    line-height: 60px;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.titulo {
+    margin: auto;
+    width: 1126px;
+    mix-blend-mode: luminosity;
+    color: #FFF;
+    font-family: Microsoft Sans Serif;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    left: 400px;
+    top: 103px;
+    position: absolute;
+}
+
+.texto-inicio {
+    display: flex;
+    width: 1076px;
+    height: 353px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: justify;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 45px;
+    word-wrap: break-word;
+    font-weight: 100;
+    line-height: 45px;
+    left: 250px;
+    top: 337px;
+    position: absolute;
+}
+
+.logo-bmw {
+    left: 60px;
+    top: 70px;
+    position: absolute;
+    width: 178px;
+    height: 184px;
+    flex-shrink: 0;
+}
+
+.icone-carro {
+    left: 1250px;
+    top: 638px;
+    position: absolute;
+    width: 659px;
+    height: 379px;
+    flex-shrink: 0;
+}
+
+button {
+    background-color: #0C3145;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+}
+
+button:hover {
+    background-color: #46687a;
+}
+
+@media(min-width:481px) and (max-width:768px) {
+
+    body {
+        background: linear-gradient(to bottom, #8a2be2, #007bff);
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .titulo {
+       left: 2px;
+       top: 20px;
+       font-size: 44px;
+    }
+
+    .logo-bmw{
+        left: 20px;
+        top: 30px;
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        flex-shrink: 0;
+       
+    }
+
+    .texto-inicio{
+        left: 150px;
+        top: 100px;
+        font-size: 32px;
+        
+    }
+
+}
